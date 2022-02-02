@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  get 'reporttypes/index'
+  devise_for :users
+  root to: 'reporttypes/index'
+  resources :reporttypes
 end
